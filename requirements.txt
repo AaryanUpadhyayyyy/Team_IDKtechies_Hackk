@@ -1,0 +1,8 @@
+sentence-transformers
+faiss-cpu
+pypdf
+python-dotenv
+fastapi
+uvicorn
+ollama  # for local LLMs (if using Ollama)
+ollama pull gemma:2b
