@@ -16,11 +16,10 @@
 
 3. **Run the system:**
    ```
-   py src/main.py
+  
    ```
-   - The first run will build the index from your PDFs.
-   - Enter your query when prompted (e.g., `46-year-old male, knee surgery in Pune, 3-month-old insurance policy`).
-   - The system will output a structured JSON response with decision, amount, justification, and clause mapping.
+  --Run backend :cd src; py -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+  --Run frontend : cd frontend ; npm start
 
 ## Notes
 - To re-index after adding new PDFs, delete `src/faiss.index` and `src/faiss_meta.pkl` and re-run the script.
