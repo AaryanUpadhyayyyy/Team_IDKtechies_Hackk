@@ -16,11 +16,11 @@
 
 3. **Run the system:**
    Run backend
-   ```
+   
   cd src; py -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
    cd frontend ; npm start
-   ```
+  
   
   
 
