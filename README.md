@@ -15,11 +15,14 @@
      ```
 
 3. **Run the system:**
+   Run backend
+   ```
+  cd src; py -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+   cd frontend ; npm start
    ```
   
-   ```
-  --Run backend :cd src; py -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-  --Run frontend : cd frontend ; npm start
+  
 
 ## Notes
 - To re-index after adding new PDFs, delete `src/faiss.index` and `src/faiss_meta.pkl` and re-run the script.
